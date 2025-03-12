@@ -1,0 +1,31 @@
+# Exclure les dépendances Node.js
+angular/node_modules/
+angular/package-lock.json
+
+# Exclure les fichiers de build Angular
+angular/dist/
+angular/.angular/
+
+# Exclure les fichiers TypeScript générés
+angular/out-tsc/
+angular/tsconfig.tsbuildinfo
+
+# Exclure les fichiers de log
+angular/npm-debug.log*
+angular/yarn-debug.log*
+angular/yarn-error.log*
+
+# Exclure les dépendances Symfony
+symfo/vendor/
+symfo/var/
+
+# Exclure les fichiers d'environnement
+angular/.env
+symfo/.env
+symfo/.env.local
+symfo/.env.*.local
+
+# Exclure les fichiers IDE
+.idea/
+.vscode/
+*.swp
