@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ArticleComponent } from './article/article.component';
-
+import { UserComponent } from './user/user.component';
 @Component({
   standalone: true,
   selector: 'app-root',
@@ -14,11 +14,15 @@ import { ArticleComponent } from './article/article.component';
         <app-article>
 
         </app-article>
+
+        <app-user>
+
+        </app-user>
       </section>
     </main>  
   `,
   styleUrls: ['./app.component.css'],
-  imports: [ArticleComponent]
+  imports: [ArticleComponent, UserComponent]
 })
 export class AppComponent {
   title = 'articles';

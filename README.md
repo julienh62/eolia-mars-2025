@@ -42,3 +42,10 @@ php bin/console make:user
 composer require api
 php bin/console doctrine:schema:update --force
 composer require doctrine/orm symfony/serializer
+
+
+creer controller dans symfony qui renvoie les données en format json
+et route api/
+
+ng generate component User --standalone --inline-template
+
