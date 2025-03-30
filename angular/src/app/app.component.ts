@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ArticleComponent } from './article/article.component';
 import { UserComponent } from './user/user.component';
+import { RouterModule } from '@angular/router';
+
 @Component({
   standalone: true,
   selector: 'app-root',
@@ -11,18 +13,14 @@ import { UserComponent } from './user/user.component';
         alt="logo" aria-hidden="true">
       </header>
       <section class="content">
-        <app-article>
 
-        </app-article>
-
-        <app-user>
-
-        </app-user>
+        <router-outlet>
+        </router-outlet>
       </section>
     </main>  
   `,
   styleUrls: ['./app.component.css'],
-  imports: [ArticleComponent, UserComponent]
+  imports: [ArticleComponent, UserComponent, RouterModule]
 })
 export class AppComponent {
   title = 'articles';
